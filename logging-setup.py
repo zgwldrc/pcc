@@ -14,3 +14,8 @@ def _configure_logging(loglevel=logging.INFO):
     ch.setFormatter(formatter)
 
     _LOGGER.addHandler(ch)
+    
+# 或直接使用模块方法, 这样设定后就不需要执行 _configure_logging()函数了
+logging.basicConfig(format=_DEFAULT_LOG_FORMAT, level=logging.INFO)
+
+
