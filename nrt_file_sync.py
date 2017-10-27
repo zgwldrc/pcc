@@ -6,7 +6,7 @@ import logging
 import inotify.constants as m_ic
 import inotify
 
-sys.path.insert(0, str(pathlib.Path('./mylib')))
+sys.path.insert(0, str(pathlib.Path('.')))
 import myinotify as m_mi
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
